@@ -1,8 +1,6 @@
 package br.com.projeto.observer;
 
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,7 +16,6 @@ import br.com.projeto.observer.repository.ProdutoEmPromocaoRepository;
 
 @SpringBootApplication
 public class ObserverApplication {
-
 
 	public static void main(String[] args) {
 		SpringApplication.run(ObserverApplication.class, args);
@@ -65,8 +62,6 @@ public class ObserverApplication {
 		notificador.registrarOuvinte(emailOuvinte);
 		notificador.registrarOuvinte(smsOuvinte);
 		notificador.notificarOuvintes();
-
-
 
 	}
 
